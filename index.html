@@ -1,0 +1,337 @@
+
+
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>芳邻二〇*</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="./img/favicon_1.ico" />
+    <link rel="apple-touch-icon" href="./img/icon_1.png" />
+
+    <script src="./js/jquery.min.js"></script>
+    <script src='./js/toHomepage_cn.js'></script>
+
+    <!-- hover艺术家名字出现图片效果 -->
+    <script src="./js/index_hover.js"></script>
+
+    <!-- 流量统计 -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?88e8fd201d154165fc58dd15af0fb073";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+
+    <!-- 设置页面自定义字体 -->
+    <style>
+        @font-face {
+            font-family: font_cn_regular;
+            src: url(./font/HYQiHei-55S.otf);
+        }
+
+        @font-face {
+            font-family: font_cn_bold;
+            src: url(./font/HYQiHei-70S.otf);
+        }
+
+        @font-face {
+            font-family: font_en_regular;
+            src: url(./font/neue-haas-unica-pro-regular.ttf);
+        }
+
+
+
+
+        * {
+            font-family: font_en_regular, font_cn_regular
+        }
+
+        
+    </style>
+  <!-- 波浪曲线滑动效果 -->
+    <script type="text/javascript">
+        $(document).on('scroll', function () {
+            $('#wave').css('margin-left', Math.max(-100 - 1.0 * window.scrollY, -3500) + "px");
+            $('#wave_2').css('margin-left', Math.max(-100 - 1.0 * window.scrollY, -3500) + "px");
+        })
+    </script>
+
+
+
+
+    <!-- 艺术家名字滑动效果 -->
+    <script type="text/javascript">
+        $(document).on('scroll', function () {
+            $('#entrance_1').css('margin-left', Math.max(230 - 0.00 * window.scrollY, 5) + "px");
+            $('#entrance_2').css('margin-left', Math.max(200 - 0.10 * window.scrollY, 5) + "px");
+            $('#entrance_3').css('margin-left', Math.max(130 - 0.08 * window.scrollY, 5) + "px");
+            $('#entrance_4').css('margin-left', Math.max(170 - 0.00 * window.scrollY, 5) + "px");
+            $('#entrance_5').css('margin-left', Math.max(250 - 0.30 * window.scrollY, 30) + "px");
+            $('#entrance_6').css('margin-left', Math.max(240 - 0.02 * window.scrollY, 45) + "px");
+            $('#entrance_7').css('margin-left', Math.max(70 - 0.06 * window.scrollY, 5) + "px");
+            $('#entrance_8').css('margin-left', Math.max(130 - 0.00 * window.scrollY, 5) + "px");
+            $('#entrance_9').css('margin-left', Math.max(60 - 0.00 * window.scrollY, 5) + "px");
+            $('#entrance_10').css('margin-left', Math.max(210 - 0.14 * window.scrollY, 30) + "px");
+            $('#entrance_11').css('margin-left', Math.max(230 - 0.02 * window.scrollY, 45) + "px");
+            $('#entrance_12').css('margin-left', Math.max(20 - 0.04 * window.scrollY, 30) + "px");
+            $('#entrance_13').css('margin-left', Math.max(220 - 0.18 * window.scrollY, 50) + "px");
+            $('#entrance_14').css('margin-left', Math.max(180 - 0.04 * window.scrollY, 5) + "px");
+            $('#entrance_15').css('margin-left', Math.max(270 - 0.13 * (window.scrollY - 200), 25) + "px");
+            $('#entrance_16').css('margin-left', Math.max(220 - 0.02 * (window.scrollY - 100), 45) + "px");
+            $('#entrance_17').css('margin-left', Math.max(230 - 0.04 * (window.scrollY - 100), 0) + "px");
+            $('#entrance_18').css('margin-left', Math.max(165 - 0.04 * (window.scrollY - 100), 0) + "px");
+            $('#entrance_19').css('margin-left', Math.max(210 - 0.02 * (window.scrollY - 300), 5) + "px");
+            $('#entrance_20').css('margin-left', Math.max(120 - 0.04 * (window.scrollY - 300), 5) + "px");
+            $('#entrance_21').css('margin-left', Math.max(210 - 0.14 * (window.scrollY - 300), 40) + "px");
+            $('#entrance_22').css('margin-left', Math.max(190 - 0.02 * (window.scrollY - 300), 0) + "px");
+            $('#entrance_23').css('margin-left', Math.max(130 - 0.06 * (window.scrollY - 500), 5) + "px");
+            $('#entrance_24').css('margin-left', Math.max(230 - 0.04 * (window.scrollY - 500), 5) + "px");
+            // $('#name25').css('margin-left', Math.max(210- 0.00* (window.scrollY-500), 5)+"px");
+            // $('#name26').css('margin-left', Math.max(110 - 0.00 * (window.scrollY-700), 0)+"px");
+            // $('#name27').css('margin-left', Math.max(220 - 0.0 * (window.scrollY-700), 0)+"px");
+            // $('#name28').css('margin-left', Math.max(160 - 0.0 * (window.scrollY-700), 0)+"px");
+
+
+
+
+
+
+        })
+    </script>
+
+
+
+
+
+</head>
+
+<body id="body" style="background-color: #ffffff;">
+
+
+<!-- 移动的曲线图片 -->
+
+<div class="wave">
+    <img id='wave' src='./img/wave.png' style="width: 8000px; opacity: 1;">
+   
+</div>
+
+<div class="wave_2">
+    <img id='wave_2'src='./img/wave_2.png' style="width: 8000px; opacity: 0;">
+</div>
+
+
+
+
+    <!-- 艺术家名字池 -->
+    <div class="grid_artists" id="grid_artists">
+
+        <div class="artists_page_title" id="title1">
+            网上邻居计划：<br>
+            芳邻二〇*
+        </div>
+
+        <div class="artists_page_title" id="title2">
+            网上邻居计划：<br>
+            芳邻二〇*
+        </div>
+
+
+        <div class="caption_1" id="caption_1">
+            [1]:“芳邻二〇“是同济大学设计创意学院2020届的毕业生展览计划。
+        <br><br>
+        [1]:“neighborh2o2od“is the exhibition project of Graduation Class 2020, College of Design & Innovation, Tongji University.
+        <br><br><br><br>
+        请任意点击敲门开始随机串门>> 
+        <br><br>
+        Click "knock" to start your journey>>
+    </div>
+      
+
+        <div class="word_pool" id='word_pool' style="opacity: 1; mix-blend-mode:unset;">
+
+            <div class="pool_1">
+
+                <div class="artists_name" id='name0' style="margin-left: 380px; ">
+                    
+
+
+                </div>
+
+
+                
+                <div  id='name1'>
+                    <br> <br><br><br> <h class="artists_name" id='entrance_1' style="margin-left:230px;">敲门</h>
+                    
+
+                </div>
+                <br>  <br> <br>
+
+                <div  id='name2' >
+                    <h  class="artists_name" id='entrance_2' style="margin-left: 200px;">咚咚</h>
+
+                </div>
+
+                <br> <br><br> <br>
+            
+                <div  id='name3' >
+                    <h  class="artists_name" id='entrance_3' style="margin-left: 130px; ">knock</h>
+
+                </div>
+              
+                <br>  <br> <br>
+
+                <div  id='name4' >
+                    <h class="artists_name"id='entrance_4' style="margin-left: 170px; ">knock</h>
+                </div>
+
+            </div>
+
+            <div class="pool_2">
+
+           
+                <div class="artists_name" id='name5' >
+                    <h id='entrance_5' style="margin-left: 250px;">咚咚</h>
+                </div>
+                <br> <br> <br>
+                <div class="artists_name" id='name6' >
+                    <h id='entrance_6' style="margin-left: 240px;">敲门<br><br> <br><br></h>
+                </div>
+                <div class="artists_name" id='name7' >
+                    <h id='entrance_7' style="margin-left: 70px;">knock<br><br> </h>
+                </div> <br>  <br> 
+                <div class="artists_name" id='name8' >
+                    <h id='entrance_8'style="margin-left: 130px;">敲</h>
+                    <br> <br>
+                </div>
+
+            </div>
+
+            <div class="pool_3">
+                <br><br> <br>
+                <div class="artists_name" id='name9' >
+                    <h  id='entrance_9' style="margin-left: 60px;">knock<br><br> </h>
+                    <br> <br>
+                </div>
+                <div class="artists_name" id='name10' >
+                    <h id='entrance_10' style="margin-left: 210px;">咚咚</h>
+                </div><br><br><br> <br>
+                <div class="artists_name" id='name11' >
+                    <h id='entrance_11' style="margin-left: 230px;">knock</h>
+                    <br> <br>
+                </div>
+                <br> <br>
+                <div class="artists_name" id='name12' >
+                    <h id='entrance_12' style="margin-left: 20px;">敲门</h>
+                </div>
+                <br>
+            </div>
+            <div class="pool_4">
+                
+                <div class="artists_name" id='name13' >
+                    <h id='entrance_13' style="margin-left: 220px;">咚<br><br> <br><br></h>
+                    <br> <br>
+                </div>
+
+                <div class="artists_name" id='name14' >
+                    <h id='entrance_14' style="margin-left: 180px;">knock</h>
+                </div>
+                <br> <br>
+                <div class="artists_name" id='name15' >
+                    <h id='entrance_15' style="margin-left: 270px;">敲</h>
+                </div>
+                <br><br>
+                <div class="artists_name" id='name16' >
+                    <h id='entrance_16' style="margin-left: 220px;">敲门</h>
+                </div>
+
+            </div>
+
+            <div class="pool_5" id="pool_5">
+
+                <div class="artists_name" id='name17' >
+                    <h id='entrance_17' style="margin-left: 230px;">knock</h>
+                </div>
+                    <br>
+                    <div class="artists_name" id='name18' >
+                        <h id='entrance_18' style="margin-left: 165px;">咚咚</h>
+                    </div>
+                    <br> <br><br>
+                    <div class="artists_name" id='name19' >
+                        <h id='entrance_19' style="margin-left: 210px;">knock<br><br> <br><br></h>
+                        
+                    </div>
+                    <br>
+                    <div class="artists_name" id='name20' >
+                        <h id='entrance_20' style="margin-left: 120px;">敲门</h>
+                    </div>
+                </div>
+
+                <div class="pool_6" id="pool_6">
+                    <div class="artists_name" id='name21' >
+                        <h id='entrance_21' style="margin-left: 210px;">咚</h>
+                    </div>
+                    <br><br>
+                    <div class="artists_name" id='name22' >
+                        <h id='entrance_22' style="margin-left: 190px;">knock</h>
+                        <br><br> <br><br> <br>
+                    </div>
+                   
+                    <div class="artists_name" id='name23' >
+                        <h id='entrance_23' style="margin-left: 130px;">敲敲</h>
+                    </div>
+                    <br>
+                    <div class="artists_name" id='name24' >
+                        <h id='entrance_24' style="margin-left: 230px;">咚</h>
+                    </div>
+
+                    <br> <br><br> <br><br> <br>
+
+                </div>
+
+                
+
+
+
+                
+
+                    
+                <!-- <br>  <br>  <br>
+                <div class="artists_name" id='name25' style="margin-left: 290px;">name25</div>
+                <div class="artists_name" id='name26' style="margin-left: 110px;">name26</div>
+                <br>  <br>  <br>
+                <div class="artists_name" id='name27' style="margin-left: 220px;">name27</div>
+                <div class="artists_name" id='name28' style="margin-left: 60px;">name28</div> -->
+
+
+            </div>
+
+
+
+           
+
+
+
+
+
+        </div>
+
+
+        <!-- 悬浮窗弹跳 -->
+        <script src="./js/bouncing.js"></script>
+
+       
+
+        <!-- 导航栏重定向至随机页_中文 -->
+        <script src='./js/IndextoHomepage.js'></script>
+
+
+
+</body>
+
+</html>

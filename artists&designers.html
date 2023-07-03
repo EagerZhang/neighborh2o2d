@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>artists & designers*</title>
+    <link rel="stylesheet" href = "./css/artists&designers.css" >
+    <script src="./js/jquery.min.js"></script>
+    <link rel="shortcut icon" href="./img/favicon_1.ico" />
+    <link rel="apple-touch-icon" href="./img/icon_1.png" />
+    
+    <!-- hover艺术家名字出现图片效果 -->
+    <script src="./js/artists_hover.js"></script>
+    <!-- 流量统计 -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?88e8fd201d154165fc58dd15af0fb073";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+    
+    
+    <!-- 设置英文页面自定义字体 -->
+    <style> 
+        @font-face {
+           font-family: font_en_regular;
+           src: url(./font/neue-haas-unica-pro-regular.ttf);
+        }
+        
+        * {
+           font-family: font_en_regular;
+        }
+        </style>
+
+    <!-- 导航栏下滑效果 -->
+        <script type="text/javascript">
+        $(function(){
+        $(".box_en li").hover(
+        function(){
+        $('>ul.box_en_dropdown:not(:animated)',this).slideDown(80);
+        },
+        function(){
+        $('>ul.box_en_dropdown',this).slideUp(80);
+        }
+        );
+        });
+        </script>
+
+ <!-- 波浪曲线滑动效果 -->
+ <script type="text/javascript">
+    $(document).on('scroll', function () {
+        $('#wave').css('margin-left', Math.max(-100 - 0.6 * window.scrollY, -3500) + "px");
+        $('#wave_2').css('margin-left', Math.max(-100 - 0.6 * window.scrollY, -3500) + "px");
+    })
+</script>
+    
+
+      
+
+        <!-- 艺术家名字滑动效果 -->
+        <script type="text/javascript">
+            $(document).on('scroll', function(){
+                $('#name1').css('margin-left', Math.max(200 - 0.00 * window.scrollY, 5)+"px");
+                $('#name2').css('margin-left', Math.max(100 - 0.14 * window.scrollY, 5)+"px");
+                $('#name3').css('margin-left', Math.max(130 - 0.08 * window.scrollY, 5)+"px");
+                $('#name4').css('margin-left', Math.max(170 - 0.00 * window.scrollY, 5)+"px");
+                $('#name5').css('margin-left', Math.max(250- 0.30 * window.scrollY, 30)+"px");
+                $('#name6').css('margin-left', Math.max(240 - 0.02 * window.scrollY, 45)+"px");
+                $('#name7').css('margin-left', Math.max(70 - 0.06 * window.scrollY, 5)+"px");
+                $('#name8').css('margin-left', Math.max(130 - 0.00 * window.scrollY, 5)+"px");
+                $('#name9').css('margin-left', Math.max(60 - 0.00 * window.scrollY, 5)+"px");
+                $('#name10').css('margin-left', Math.max(210 - 0.14 * window.scrollY, 30)+"px");
+                $('#name11').css('margin-left', Math.max(230 - 0.02 * window.scrollY, 45)+"px");
+                $('#name12').css('margin-left', Math.max(20 - 0.04 * window.scrollY, 30)+"px");
+                $('#name13').css('margin-left', Math.max(220 - 0.18 * window.scrollY, 50)+"px");
+                $('#name14').css('margin-left', Math.max(180 - 0.04 * window.scrollY, 5)+"px");
+                $('#name15').css('margin-left', Math.max(270- 0.13 * (window.scrollY-200), 25)+"px");
+                $('#name16').css('margin-left', Math.max(220 - 0.02 * (window.scrollY-100), 45)+"px");
+                $('#name17').css('margin-left', Math.max(230 - 0.04 * (window.scrollY-100), 0)+"px");
+                $('#name18').css('margin-left', Math.max(165 - 0.04 * (window.scrollY-100), 0)+"px");
+                $('#name19').css('margin-left', Math.max(210 - 0.02 * (window.scrollY-300), 5)+"px");
+                $('#name20').css('margin-left', Math.max(120 - 0.04 * (window.scrollY-300), 5)+"px");
+                $('#name21').css('margin-left', Math.max(210 - 0.14 * (window.scrollY-300), 40)+"px");
+                $('#name22').css('margin-left', Math.max(190 - 0.02 * (window.scrollY-300), 0)+"px");
+                $('#name23').css('margin-left', Math.max(130 - 0.06 * (window.scrollY-500), 5)+"px");
+                $('#name24').css('margin-left', Math.max(230 - 0.04 * (window.scrollY-500), 5)+"px");
+                // $('#name25').css('margin-left', Math.max(210- 0.00* (window.scrollY-500), 5)+"px");
+                // $('#name26').css('margin-left', Math.max(110 - 0.00 * (window.scrollY-700), 0)+"px");
+                // $('#name27').css('margin-left', Math.max(220 - 0.0 * (window.scrollY-700), 0)+"px");
+                // $('#name28').css('margin-left', Math.max(160 - 0.0 * (window.scrollY-700), 0)+"px");
+      
+    
+         
+           
+           
+
+            })
+        </script>
+
+         
+
+
+
+</head>
+
+<body>
+
+    <!-- 碰壁导航栏 -->
+    <nav id='bouncingBox' class="box_en">
+    
+        <li>
+            <div class="box_en_title"></div>
+            <ul class="box_en_dropdown">
+                <li><a id='toHomepage_en'>knock knock knock*</a></li>
+                <li><a href="./artists&designers.html">artists & designers*</a></li>
+                <li><a href="./photo gallery.html">photo gallery*</a></li>
+                <li><a href="./news.html">news*</a></li>
+                <li><a href="./about.html">about*</a></li>
+                <li><a href="./参展名单.html" style="font-size: 1.1em; border-bottom: solid; border-color: #4B69B2;
+                    border-width: 0.1em;">中文*</a></li>
+            </ul>
+        
+        </li>   
+    </nav>
+
+    <!-- 移动的曲线图片 -->
+
+<div class="wave">
+    <img id='wave' src='./img/wave.png' style="width: 8000px; opacity: 1;">
+   
+</div>
+
+<div class="caption_1" id="caption_1">
+    [1]: Pay a visit through name tags。
+
+</div>
+
+     
+            
+     <!-- 艺术家名字池 -->
+     <div class="grid_artists">
+       
+            <div class="artists_page_title">
+                artists & designers*
+            </div>
+   
+         
+            <div class="artists_pool">
+
+                <div class="left_pool">
+
+                <div class="artists_name" id='name1' style="margin-left: 200px; " >
+                    <br> <br>Maxwell Liu
+                        <img id='artistimg1' src='./img/artists&designers/artists_list_1.png' style="height: 0px;  display: block;" >
+                </div>
+
+
+                <br>  <br>
+                <div class="artists_name" id='name2' style="margin-left:100px;">
+                    <br> <br>Mingyu Zhuang
+                    <img id='artistimg2' src='./img/artists&designers/artists_list_2.png' style="height: 0px;  display: block;" >
+                </div>
+
+
+                <div class="artists_name" id='name3' style="margin-left: 130px;">
+                    <br>Liu Yujing
+                    <img id='artistimg3' src='./img/artists&designers/artists_list_3.png' style="height: 0px;  display: block;" >
+                </div>
+                <br>  <br>  <br>
+                <div class="artists_name" id='name4'style="margin-left: 170px;" >
+                    Raon Yang
+                    <img id='artistimg4' src='./img/artists&designers/artists_list_4.png' style="height: 0px;  display: block;" >
+                </div>
+                <br>
+                <div class="artists_name" id='name5' style="margin-left: 250px;"> 
+                    <br> <br>Chen Yuting
+                 <img id='artistimg5' src='./img/artists&designers/artists_list_5.png' style="height: 0px;  display: block;" >
+                </div>
+
+                <div class="artists_name" id='name6' style="margin-left: 240px;">
+                    <br> <br><br> Zhu Beijia
+                    <img id='artistimg6' src='./img/artists&designers/artists_list_6.png' style="height: 0px;  display: block;" ></div>
+                <br>
+                <div class="artists_name" id='name7' style="margin-left: 70px;">
+                    <br> <br><br>Vicky Tian
+                    <img id='artistimg7' src='./img/artists&designers/artists_list_7.png' style="height: 0px;  display: block;" ></div>
+                <br>  <br>
+                <div class="artists_name" id='name8' style="margin-left: 130px;">
+                    Yao Qixian
+                    <img id='artistimg8' src='./img/artists&designers/artists_list_8.png' style="height: 0px;  display: block;" ></div>
+
+
+                </div>
+
+                <div class="middle_pool">
+                <br>
+                <div class="artists_name" id='name9' style="margin-left: 60px;">
+                    <br>Wu You
+                    <img id='artistimg9' src='./img/artists&designers/artists_list_9.png' style="height: 0px;  display: block;" ></div>
+
+                <div class="artists_name" id='name10'style="margin-left: 210px;">
+                    <br> <br><br> YÁN Guǎnghè
+                    <img id='artistimg10' src='./img/artists&designers/artists_list_10.png' style="height: 0px;  display: block;" ></div>
+
+                <div class="artists_name" id='name11'style="margin-left: 230px;">
+                    Maoshuo Chen
+                    <img id='artistimg11' src='./img/artists&designers/artists_list_11.png' style="height: 0px;  display: block;" ></div>
+                <br>
+                <div class="artists_name" id='name12'style="margin-left: 20px;">
+                    <br> <br>Xu Man
+                    <img id='artistimg12' src='./img/artists&designers/artists_list_12.png' style="height: 0px;  display: block;" ></div>
+                <br>  <br>
+                <div class="artists_name" id='name13' style="margin-left: 220px;">
+                    <br>Wang Shiwen
+                    <img id='artistimg13' src='./img/artists&designers/artists_list_13.png' style="height: 0px;  display: block;" ></div>
+
+                <div class="artists_name" id='name14' style="margin-left: 180px;">
+                    <br> <br> Cai Minhao
+                    <img id='artistimg14' src='./img/artists&designers/artists_list_14.png' style="height: 0px;  display: block;" ></div>
+                <br> <br>
+                <!-- <div class="artists_name" id='name15' style="margin-left: 270px;">
+                    Wang Minxuan
+                    <img id='artistimg15' src='./img/artists&designers/artists_list_15.png' style="height: 0px;  display: block;" ></div>
+                <br> -->
+                <div class="artists_name" id='name16' style="margin-left: 220px;">
+                    Chen Yuqi
+                    <img id='artistimg16' src='./img/artists&designers/artists_list_16.png' style="height: 0px;  display: block;" ></div>
+
+                </div>
+
+                <div class="right_pool">
+
+                <div class="artists_name" id='name17' style="margin-left: 230px;">
+                    <br>Bao Xiying
+                    <img id='artistimg17' src='./img/artists&designers/artists_list_17.png' style="height: 0px;  display: block;" ></div>
+                <br>
+                <div class="artists_name" id='name18' style="margin-left: 165px;">
+                    <br> <br> Yi Tianya
+                    <img id='artistimg18' src='./img/artists&designers/artists_list_18.png' style="height: 0px;  display: block;" ></div>
+                <br>  <br>   <br>
+                <div class="artists_name" id='name19' style="margin-left: 210px;">
+                   Zhang Yixiang
+                    <img id='artistimg19' src='./img/artists&designers/artists_list_19.png' style="height: 0px;  display: block;" ></div>
+                <br>  <br>
+                <div class="artists_name" id='name20' style="margin-left: 120px;">
+                    <br> <br>Jiawen LEE
+                    <img id='artistimg20' src='./img/artists&designers/artists_list_20.png' style="height: 0px;  display: block;" ></div>
+
+
+                <div class="artists_name" id='name21' style="margin-left: 210px;">
+                    <br>Cai Yanni
+                    <img id='artistimg21' src='./img/artists&designers/artists_list_21.png' style="height: 0px;  display: block;" ></div>
+                <br>
+                <div class="artists_name" id='name22' style="margin-left: 190px;" >
+                    <br> <br><br>Zhong Mingjun
+                    <img id='artistimg22' src='./img/artists&designers/artists_list_22.png' style="height: 0px;  display: block;" ></div>
+                <br> <br>
+                <div class="artists_name" id='name23' style="margin-left: 130px;">
+                    Wang Lanyue
+                    <img id='artistimg23' src='./img/artists&designers/artists_list_23.png' style="height: 0px;  display: block;" ></div>
+                <br>
+                <div class="artists_name" id='name24' style="margin-left: 230px;">
+                    <br> <br>Ren Jiaxuan
+                    <img id='artistimg24' src='./img/artists&designers/artists_list_24.png' style="height: 0px;  display: block;" ></div>
+
+                </div>
+                <!-- <br>  <br>  <br>
+                <div class="artists_name" id='name25' style="margin-left: 290px;">name25</div>
+                <div class="artists_name" id='name26' style="margin-left: 110px;">name26</div>
+                <br>  <br>  <br>
+                <div class="artists_name" id='name27' style="margin-left: 220px;">name27</div>
+                <div class="artists_name" id='name28' style="margin-left: 60px;">name28</div> -->
+
+
+            </div>
+
+           
+
+            <br>
+           
+
+        <!-- 悬浮窗弹跳 -->
+        <script src="./js/bouncing.js"></script>
+
+
+    <!-- 点击艺术家名字重定向至作品集页面_英文 -->
+    <script src="./js/redirect_en.js"></script>
+
+    <!-- 导航栏重定向至随机页_英文 -->
+    <script src='./js/toHomepage_en.js'></script>
+
+  
+
+
+        
+       </div> 
+
+     
+
+
+
+    
+</body>
+</html>

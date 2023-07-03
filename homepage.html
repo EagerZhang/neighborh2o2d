@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>neighborh2o2od.com</title>
+    <link rel="stylesheet" href = "./css/homepage.css" >
+    <script src="./js/jquery.min.js"></script>
+    <link rel="shortcut icon" href="./img/favicon_1.ico" />
+    <link rel="apple-touch-icon" href="./img/icon_1.png" />
+     <!-- hover艺术家名字出现图片效果 -->
+     <script src="./js/workimg_hover.js"></script>
+
+       <!-- 流量统计 -->
+       <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?88e8fd201d154165fc58dd15af0fb073";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+
+    <!-- 作品图片点击变大及左右切换代码 -->
+    
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+        
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+        
+        }
+    </script>
+    
+    <!-- 设置英文页面自定义字体 -->
+    <style> 
+        @font-face {
+           font-family: font_en_regular;
+           src: url(./font/neue-haas-unica-pro-regular.ttf);
+        }
+        
+        * {
+           font-family: font_en_regular;
+        }
+    </style>
+
+    <!-- 导航栏下滑效果 -->
+    <script type="text/javascript">
+        $(function(){
+            $(".box_en li").hover(
+            function(){
+                $('>ul.box_en_dropdown:not(:animated)',this).slideDown(80);
+            },
+            function(){
+                $('>ul.box_en_dropdown',this).slideUp(80);
+            });
+        });
+    </script>
+
+       <!-- 波浪曲线滑动效果 -->
+       <script type="text/javascript">
+           $(document).on('scroll', function(){
+               $('#wave').css('margin-left', Math.max(-100 - 1.4 * window.scrollY, -3500)+"px");
+           })
+       </script>
+
+       
+
+        <!-- 图片和关键词滑动效果 -->
+        <script type="text/javascript">
+            $(document).on('scroll', function(){
+                $('#imageword1').css('margin-left', Math.max(480 - 0.20 * window.scrollY, -20)+"px");
+                $('#workimg1').css('margin-left', Math.max(480 - 0.20 * window.scrollY, -20)+"px");
+
+                $('#keyword1').css('margin-left', Math.max(240 - 0.07 * window.scrollY, -20)+"px");
+                
+
+                $('#imageword2').css('margin-left', Math.max(380 - 0.04 * window.scrollY, -20)+"px");
+                $('#workimg2').css('margin-left', Math.max(380 - 0.04 * window.scrollY, -20)+"px");
+                
+
+                $('#imageword3').css('margin-left', Math.max(450 - 0.18 * window.scrollY, -20)+"px");
+                $('#workimg3').css('margin-left', Math.max(450 - 0.18 * window.scrollY, -20)+"px");
+
+                $('#keyword2').css('margin-left', Math.max(380 - 0.33 * window.scrollY, 10)+"px");
+              
+                $('#imageword4').css('margin-left', Math.max(260 - 0.04 * window.scrollY, -20)+"px");
+                $('#workimg4').css('margin-left', Math.max(260 - 0.04 * window.scrollY, -20)+"px");
+               
+                $('#imageword5').css('margin-left', Math.max(420 - 0.08 * window.scrollY, -20)+"px");
+                $('#workimg5').css('margin-left', Math.max(420 - 0.08 * window.scrollY, -20)+"px");
+
+                $('#imageword6').css('margin-left', Math.max(350 - 0.10 * window.scrollY, -20)+"px");
+                $('#workimg6').css('margin-left', Math.max(350 - 0.10 * window.scrollY, -20)+"px");
+
+                $('#keyword3').css('margin-left', Math.max(340 - 0.05 * window.scrollY, -20)+"px");
+                
+
+            })
+        </script>
+
+         
+
+
+
+</head>
+
+<body>
+
+    <!-- 碰壁导航栏 -->
+    <nav id="bouncingBox" class="box_en">
+    
+        <li>
+            <div class="box_en_title"></div>
+            <ul class="box_en_dropdown">
+                <li><a id='toHomepage_en'>knock knock knock*</a></li>
+                <li><a href="./artists&designers.html">artists & designers*</a></li>
+                <li><a href="./photo gallery.html">photo gallery*</a></li>
+                <li><a href="./news.html">news*</a></li>
+                <li><a href="./about.html">about*</a></li>
+                <li><a id='toCnPage' style="font-size: 1.1em; border-bottom: solid; border-color: #4B69B2;
+                    border-width: 0.1em;">中文*</a></li>
+            </ul>
+        
+        </li>   
+    </nav>
+
+     <!-- 三列内容 -->
+     <div class="grid_homepage" id='grid_homepage'>
+        <div class="left_column">
+           <div class="homepage_column_title" id='project_name'>
+               
+           </div>
+   
+           <div class="homepage_column_text" id='project_text'>
+               
+           </div>
+
+           <br><br>
+   
+       </div>
+   
+       <div class="middle_column">
+        <div  >
+            <video controls="controls" loop="loop"  width="100%" type="video/mp4" id="interview_video" src="" >
+                    
+                    
+                Your browser does not support the video tag.
+        </video>
+                <br>
+            <div id='leftBtn' class="homepage_column_text" style="text-decoration: underline; z-index: 50; float: left;">
+                last door
+            </div>
+           
+            <div id='rightBtn' class="homepage_column_text" style="text-decoration: underline; z-index: 50; float: right;">
+                next door
+            </div>
+            <br>  <br>
+            <div class="caption_1" id='no_video'>
+                   
+            </div>
+            <br> 
+            <div class="caption_1" id='caption_1' style="color:black; text-decoration: unset; z-index: 50;">
+              
+                 *For more to watch,
+                <a style="color:black; text-decoration: underline; z-index: 50;" href="https://space.bilibili.com/277324711">here</a><br>
+            </div>
+        </div>
+        <br><br> 
+    </div>
+
+   
+           <div class="right_column">
+               
+               <div class="homepage_column_title" id='artist_name'>
+                   
+               </div>
+   
+               <div class="homepage_column_text" id='artist_text'>
+                   
+               </div>
+
+               <div class="homepage_column_text" id='artist_contact_1' style="padding-bottom: 1em;">
+
+            </div>
+
+            <div class="homepage_column_text" id='artist_contact_2' style="padding-bottom: 1em;">
+
+            </div>
+
+            <div class="homepage_column_text" id='artist_contact_3' style="padding-bottom: 1em;">
+
+            </div>
+
+            <div class="homepage_column_text" id='artist_contact_4' style="padding-bottom: 1em;">
+
+            </div>
+
+           </div> 
+
+           <br><br>
+       </div> 
+        
+
+
+
+       
+       <div class="caption_2">
+        <br><br>  [1][2][3][4][5][6]: <br>click to enlarge the image.
+       </div>
+        
+        <!-- 移动的曲线图片 -->
+        
+        <div class="wave">
+            <img id='wave' src='./img/wave_3.png' style="width: 4000px;">
+        </div>
+       
+
+          <!-- 飘动的作品图片池和关键词池 -->
+    <div class="homepage_image_pool" id='image_pool'>
+
+        <div class="left_pool" >
+            <!-- 图片第一组 -->
+            
+                <div class="homepage_pool_imageword"> 
+                    <h id='imageword1' style="margin-left: 480px;  padding-bottom: 20px;" onclick="openModal();currentSlide(1)">image1*</h> 
+                    <br>
+                </div>
+
+                <div class="homepage_imageword_match_img" >
+                    <img class="homepage_pool_img" id='workimg1' src='' style="margin-left: 300px; height: 0px;  " >
+
+
+              </div>
+
+
+                  <!-- 关键词1 -->
+            <div class="homepage_keyword_match_img">
+                <br><br>
+                <div class="homepage_pool_keyword"> 
+                    <h id='keyword1' style="margin-left: 240px;"></h> 
+                
+                </div>
+              </div>
+           
+
+            
+
+             <!-- 图片第二组 -->
+            <div class="homepage_imageword_match_img" onclick="openModal();currentSlide(2)">
+                <div class="homepage_pool_imageword"> 
+                    <br>
+                    <h id='imageword2' style="margin-left: 480px;">image2*</h> 
+                
+                </div>
+
+                <img class="homepage_pool_img" id='workimg2' src=''  style="margin-left: 480px; height: 0px; " >
+              </div>
+
+        
+              <!-- 关键词2 -->
+              <div class="homepage_keyword_match_img">
+                <div class="homepage_pool_keyword"> 
+                    <br><br><br>
+                    <h id='keyword3' style="margin-left: 340px;"></h> 
+                
+                </div>
+              </div>
+       
+
+    
+                    <!-- 图片第三组 -->
+            <div class="homepage_imageword_match_img" onclick="openModal();currentSlide(3)">
+                <br><br><br>
+                <div class="homepage_pool_imageword"> 
+                    <h id='imageword3' style="margin-left: 480px;">image3*</h> 
+                </div>
+
+                <img class="homepage_pool_img" id='workimg3' src=''  style="margin-left: 480px; height: 0px; " >
+              </div>
+       
+            
+       
+        </div>
+   
+         
+        <div class="right_pool" style="z-index: 600;">
+
+
+
+                  <!-- 关键词2 -->
+                  <div class="homepage_keyword_match_img">
+                   
+                    <div class="homepage_pool_keyword"> 
+                        <h id='keyword2' style="margin-left: 380px;"></h> 
+                    
+                    </div>
+                  </div>
+            
+            
+                   <!-- 图片第四组 -->
+                   <div class="homepage_imageword_match_img" onclick="openModal();currentSlide(4)" >
+                    <br><br><br>
+                    <div class="homepage_pool_imageword"> 
+                        <h id='imageword4' style="margin-left: 480px;">image4*</h> 
+                    <img class="homepage_pool_img" id='workimg4' src=''  style="margin-left: 480px; height: 0px;" >
+                       
+                    </div>
+                  </div>
+    
+                 <!-- 图片第五组 -->
+                <div class="homepage_imageword_match_img" onclick="openModal();currentSlide(5)">
+                    <br><br>
+                    <div class="homepage_pool_imageword"> 
+                        <h id='imageword5' style="margin-left: 480px;">image5*<br></h> 
+                        <img class="homepage_pool_img" id='workimg5' src=''  style="margin-left: 480px; height: 0px;" >
+                       
+                    </div>
+                  </div>
+
+                  <br>
+        
+                        <!-- 图片第六组 -->
+                <div class="homepage_imageword_match_img" onclick="openModal();currentSlide(6)">
+                    
+                    <div class="homepage_pool_imageword"> 
+                        <h id='imageword6' style="margin-left: 480px;">image6*</h> 
+                        <img class="homepage_pool_img" id='workimg6' src=''  style="margin-left: 480px; height: 0px;" >
+                  
+                  
+                    </div>
+
+                    <br><br><br>
+                  </div>
+
+           
+           
+
+        </div> 
+
+        
+       </div> 
+
+
+       <br><br>
+
+       <!-- <div class="work_video" style="margin:20px;">
+               
+
+        <video controls="controls"  loop="loop" width="100%" >
+            <source src="./img/Eager Zhang/eager_video.mp4" type="video/mp4" />
+            
+            Your browser does not support the video tag.
+            </video>
+    </div>  -->
+
+
+       <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+         <!-- 更换图片时纵向图片宽不超过1200px，纵向图片高不超过900px 
+            图片后style 横向图片添加：style="width:100%"/纵向图片添加style="width: 50%; margin-left: 25%;"-->   
+      <img id="slideimg1" src="" style="width: 100%;">
+    </div>
+
+    <div class="mySlides">
+      <img id="slideimg2" src="" style="width:100%">
+    </div>
+
+    <div class="mySlides">     
+      <img id="slideimg3" src="" style="width:100%">
+    </div>
+    
+    <div class="mySlides">     
+      <img  id="slideimg4"src="" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <img  id="slideimg5" src="" style="width:100%">
+    </div>
+      
+    <div class="mySlides">    
+        <img id="slideimg6" src="" style="width:100%">
+    </div>
+      
+   
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+    <!-- 悬浮窗弹跳 -->
+    <script src="./js/bouncing.js"></script>
+
+    <!-- 导航栏重定向至随机页_英文 -->
+    <script src='./js/toHomepage_en.js'></script>
+
+       <!-- 随机解析一位艺术家_英文 -->
+       <script src="./js/random_en.js"></script>
+
+  </div>
+</div>
+
+    
+</body>
+</html>
