@@ -1,0 +1,667 @@
+*{
+    max-width: 4000px;
+    overflow-x: hidden;
+}
+
+body{
+    
+
+    margin: 10px;
+    background-color: white;
+  
+    
+
+}
+
+.box_cn{
+    z-index: 6000;
+    position: fixed;
+    left: 400px;
+    top: 300px;
+    list-style: none;
+    
+}
+
+.box_cn_title{
+
+    list-style: none;
+    width: 250px;
+    height: 31px;
+    background-image: url("./img/box_cn_title.png");
+   
+    
+}
+
+.box_cn_dropdown{
+    list-style: none;
+    display: none;
+    margin-left: -40px;
+    margin-top: 0px;
+}
+        
+
+.box_cn_dropdown li a {
+    position: relative;
+    overflow-y: hidden;
+    display: none;
+    list-style: none;
+    float: left;
+    width: 246px;
+    height: 23px;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    text-align: left;
+    
+    text-indent: 3px;
+    border-style: solid;
+    border-top: unset;
+    border-bottom: unset;
+    border-color: #4B69B2;
+    border-width: 0.1em;
+    display: block;
+    text-decoration: none;
+    background-color:#E2DECF;
+    color: black;
+}
+
+
+
+.box_cn_dropdown li a:hover {
+    list-style: none;
+    background-color:#4B69B2;
+    color: white;
+   cursor: default;
+            }
+
+
+.grid_homepage{
+
+    border-top: unset;
+    border-bottom: unset;
+
+    border-style: solid;
+    border-color: black;
+    border-bottom: unset;
+    border-width: 0.1em;
+    z-index: 100;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
+    
+
+}
+
+.left_column{
+
+    grid-column: 1/2;
+
+}
+
+
+
+
+.homepage_column_title{
+    padding-top: 15px;
+    padding-bottom: 1.5em;
+    font-size: 3em;
+    line-height: 1.2em;
+    color:#d6d6d6;
+    /* 描黑边字体 */
+    text-shadow: -1px 1px 0 #000,
+                -1px -1px 0 #000,
+				  1px 1px 0 #000,
+                 1px -1px 0 #000;
+                 
+				 
+}
+
+.homepage_column_text{
+
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: black;
+    padding-bottom: 5em;
+                 
+				 
+}
+
+
+
+.middle_column{
+    background-color: #d6d6d6;
+    margin-top: 15px;
+    padding: 10px;
+    border-style:solid;
+    border-color: black;
+    border-width: 0.1em;
+    grid-column: 2/3;
+
+}
+
+#interview_video{
+    z-index: 1000;
+}
+
+.caption_1{
+    
+    position: absolute;
+    overflow-y: hidden;
+    float: left;
+    font-size: 1em;
+    line-height: 1.3em;
+    color:#000000;
+}
+
+
+.right_column{
+
+    grid-column: 3/4;
+
+}
+
+.wave{
+    z-index: -1;
+    margin-top: -120px;
+    margin-left: -100px;
+
+}
+
+
+#leftBtn {
+    position: relative;
+    float: left;
+   
+   
+}
+
+/* #midBtn {
+    position: relative;
+    
+} */
+
+#rightBtn {
+    position: relative;
+    float: right;
+    
+}
+
+.caption_2{
+    
+    z-index: 1999;
+    position: absolute;
+    overflow-y: hidden;
+    float: right;
+    
+    right: 15px;
+    font-size: 1em;
+    line-height: 1.3em;
+    color:#000000;
+}
+
+ 
+.homepage_image_pool{
+
+    
+
+    mix-blend-mode: multiply;
+    z-index: 5000;
+    margin-top: -350px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 3em;
+    line-height: 1.2em;
+    color: white;
+    /* 描黑边字体 */
+    text-shadow: -1px 1px 0 #000,
+                -1px -1px 0 #000,
+				  1px 1px 0 #000,
+                 1px -1px 0 #000;
+                 
+
+    
+                 
+    
+}
+
+.left_pool{
+    grid-column: 1/2;
+    z-index: 5000;
+}
+
+.right_pool{
+    grid-column: 2/3; 
+    z-index: 5000;
+}
+
+
+.homepage_imageword_match_img{
+    
+    position: relative;
+    overflow-y: hidden;
+    mix-blend-mode: multiply;
+
+    
+  }
+
+
+
+.homepage_pool_imageword{
+    
+   position: relative;
+    overflow-y: hidden;
+}
+
+
+.homepage_pool_keyword{
+    position: relative;
+    color:#d6d6d6;
+    overflow-y: hidden;
+}
+
+
+#imageword1:hover{
+    position: relative;
+    overflow-y: hidden;
+    text-decoration-line: unset;
+    color:#d6d6d6;
+    mix-blend-mode: multiply;
+    cursor: pointer;
+
+}
+
+#imageword2:hover{
+    position: relative;
+    overflow-y: hidden;
+    text-decoration-line: unset;
+    color:#d6d6d6;
+    mix-blend-mode: multiply;
+    cursor: pointer;
+
+}
+#imageword3:hover{
+    position: relative;
+    overflow-y: hidden;
+    text-decoration-line: unset;
+    color:#d6d6d6;
+    mix-blend-mode: multiply;
+    cursor: pointer;
+
+}
+#imageword4:hover{
+    position: relative;
+    overflow-y: hidden;
+    text-decoration-line: unset;
+    color:#d6d6d6;
+    mix-blend-mode: multiply;
+    cursor: pointer;
+
+}
+#imageword5:hover{
+    position: relative;
+    overflow-y: hidden;
+    text-decoration-line: unset;
+    color:#d6d6d6;
+    mix-blend-mode: multiply;
+    cursor: pointer;
+
+}
+#imageword6:hover{
+    position: relative;
+    overflow-y: hidden;
+    text-decoration-line: unset;
+    color:#d6d6d6;
+    mix-blend-mode: multiply;
+    cursor: pointer;
+
+}
+
+
+
+
+
+  /* 作品图片放大切换返回相关*/
+        /* The Modal (background) */
+      
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+           
+            max-width: 1200px;
+            max-height: 900px;
+            left: 160px;
+            right: 160px;
+            top: 5%;
+           
+            overflow:auto;
+        }
+        
+        /* Modal Content */
+        .modal-content {
+            position: relative;
+            margin: auto;
+            max-width: 1200px;
+            max-height: 900px;
+            overflow:auto;
+           
+        }
+
+   
+        
+        /* The Close Button */
+        .close {
+            color: white;
+           
+            z-index: 300;
+            position: absolute;
+            top: 0px;
+            right: 12px;
+            font-size: 2.0em;
+            font-weight: bold;
+            mix-blend-mode: difference;
+                /* 描黑边字体 */
+                text-shadow: -1px 1px 0 #000,
+                -1px -1px 0 #000,
+                1px 1px 0 #000,
+                1px -1px 0 #000;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #000000;
+            text-decoration: none;
+            cursor: pointer;
+            
+        }
+        
+        .mySlides {
+            display: none;
+           
+
+        }
+        
+        .cursor {
+            cursor: pointer;
+        }
+        
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5em;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+            mix-blend-mode: difference;
+            /* 描黑边字体 */
+            text-shadow: -1px 1px 0 #000,
+            -1px -1px 0 #000,
+            1px 1px 0 #000,
+            1px -1px 0 #000;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            color: #000000;
+            text-decoration: none;
+            cursor: pointer;
+            
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 1.2em;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        
+        
+        .demo {
+            opacity: 0.6;
+        }
+        
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+        
+        
+    
+      @media only screen and (max-width: 1080px) {
+
+        .grid_homepage{
+
+           
+            grid-template-columns: 1fr 1fr;
+            
+        
+        }
+
+        .left_column{
+            
+            grid-column: 1/2;
+        }
+
+        .middle_column{
+            
+            grid-column: 2/3;
+        }
+
+        .right_column{
+            
+            grid-column: 1/3;
+        }
+
+        .homepage_column_title{
+            
+            font-size: 2.7em;
+            line-height: 1.15em;
+            padding-bottom: 1.2em;
+            
+          
+                         
+                         
+        }
+        
+        .homepage_column_text{
+
+            font-size: 1.1em;
+            line-height: 1.45em;
+                         
+                         
+        }
+
+        .homepage_image_pool{
+    
+       
+            font-size: 2.7em;
+            line-height: 1.15em;
+            
+         
+            
+        }
+
+
+        .modal {
+           
+          
+            left: 10px;
+            right: 10px;
+            top: 15%;
+            
+           
+        }
+
+
+
+
+        
+
+      }
+
+
+
+  
+      @media only screen and (max-width: 800px) {
+
+        .grid_homepage{
+
+           
+            grid-template-columns: 1fr 1fr;
+            
+        
+        }
+
+        .left_column{
+            
+            grid-column: 1/2;
+        }
+
+        .middle_column{
+            
+            grid-column: 2/3;
+        }
+
+        .right_column{
+            
+            grid-column: 1/3;
+        }
+
+        
+
+    
+        .modal {
+           
+          
+            left: 10px;
+            right: 10px;
+            top: 18%;
+            
+           
+        }
+
+        
+
+      }
+
+
+      @media only screen and (max-width: 650px) {
+
+        .grid_homepage{
+
+           
+            grid-template-columns: 1fr;
+            
+        
+        }
+
+        .left_column{
+            
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        .middle_column{
+            
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .right_column{
+            
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+
+        .homepage_column_title{
+            
+            font-size: 2.4em;
+            line-height: 1.1em;
+            padding-bottom: 2.0em;
+            
+          
+                         
+                         
+        }
+        
+        .homepage_column_text{
+        
+            font-size: 1.0em;
+            line-height: 1.4em;
+            
+            
+                         
+                         
+        }
+
+        .homepage_image_pool{
+    
+       
+           
+            font-size: 2.4em;
+            line-height: 1.1em;
+            
+         
+            
+        }
+
+       
+
+        .homepage_image_pool{
+
+        
+            grid-template-columns: 1fr;
+            
+         
+ 
+        }
+
+        .left_pool{
+            grid-column: 1/2;
+            
+        }
+        
+        .right_pool{
+            grid-column: 1/2; 
+            
+        }
+        
+        
+        .modal {
+           
+          
+            left: 10px;
+            right: 10px;
+            top: 22%;
+            
+           
+        }
+
+      }
+        
+
+
+        
+

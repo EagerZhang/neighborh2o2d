@@ -1,0 +1,236 @@
+*{
+    max-width: 4000px;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+.grid_artists{
+
+    margin: 15px;
+   background-color: transparent;
+   
+   
+
+                    
+                    
+    
+    
+
+}
+
+.word_pool{
+
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    
+    column-gap: 0em;
+
+  
+    
+    
+}
+
+#title1{
+    color: #ffffff;
+    top: 25px;
+    text-shadow: unset;
+}
+
+#title2{
+    color: #d6d6d6;
+    top: 25px;
+    text-shadow: -1px 1px 0 #000,
+                   -1px -1px 0 #000,
+                   1px 1px 0 #000,
+                   1px -1px 0 #000;
+    
+}
+
+
+.wave{
+   
+    position: fixed;
+    top: 50%;
+    z-index: -1;
+    margin-top: -150px;
+    margin-left: -100px;
+
+}
+
+.wave_2{
+    
+    position: fixed;
+    top: 50%;
+    z-index: -1;
+    margin-top: -150px;
+    margin-left: -100px;
+
+}
+
+
+
+
+
+.artists_page_title{
+    z-index: 1000;
+    
+    position: fixed;
+    overflow-y: hidden;
+    top: 25px;
+    padding-bottom: 0em;
+    font-size: 3.5em;
+    line-height: 1.2em;
+    text-shadow: unset;
+    
+    
+    
+    
+    
+                       
+}
+
+.caption_1{
+    position: fixed;
+    overflow-y: hidden;
+    top: 25px;
+    right: 2em;
+    width: 20%;
+    font-size: 1em;
+    line-height: 1.3em;
+    color:#000000;
+}
+
+
+
+.artists_name{
+    z-index: 400;
+    position: relative;
+    overflow-y: hidden;
+    font-size: 3.5em;
+    
+    white-space: nowrap;
+    will-change: opacity;
+
+    color: white;
+    
+    /* 描黑边字体 */
+    text-shadow: -1px 1px 0 #000,
+                   -1px -1px 0 #000,
+                   1px 1px 0 #000,
+                   1px -1px 0 #000;
+
+  
+                 
+}
+
+
+.artists_name a{
+
+    text-decoration-line: unset;
+   color: white;
+
+    
+   
+                 
+}
+
+
+.artists_name :hover{
+
+    text-decoration-line: unset;
+    cursor: pointer;
+    color:#d6d6d6;
+    
+    
+
+                 
+}
+
+
+
+    
+@media only screen and (max-width: 1080px){
+
+    .word_pool{
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+    }
+
+
+    .artists_page_title{
+     
+        font-size: 3.2em;
+        line-height: 1.1em;
+       
+        
+                           
+    }
+
+    
+
+
+    .artists_name{
+
+        font-size: 3.2em;
+       
+       
+        
+                     
+    }
+    
+
+}
+
+@media only screen and (max-width: 800px) {
+
+
+
+ 
+}
+
+@media only screen and (max-width: 650px){
+
+
+   
+    .word_pool{
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+
+
+    .artists_page_title{
+     
+        font-size: 3.0em;
+        line-height: 1.1em;
+        
+                           
+    }
+
+    .caption_1{
+        position: fixed;
+        top: 150px;
+        right: 1em;
+        width: 50%;
+        line-height: 1.3em;
+    }
+    
+
+
+
+ 
+
+    .artists_name{
+
+        font-size: 3.0em;
+      
+    }
+
+}
+
+
+
