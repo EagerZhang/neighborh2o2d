@@ -187,13 +187,13 @@ readFile("./data_cn.json", function(jsonData){
     leftBtn.onclick = function () {
         i= antiOverflow(i, -1);
         update(i,data);
-        window.location.href = 'http://' + window.location.host + '/敲敲门.html?index='+i;
+        window.location.href = 'http://' + window.location.host + 'neighborh2o2d.github.io/敲敲门.html?index='+i;
     }
 
     rightBtn.onclick = function () {
         i = antiOverflow(i, 1);
         update(i,data);
-        window.location.href = 'http://' + window.location.host + '/敲敲门.html?index='+i;
+        window.location.href = 'http://' + window.location.host + 'neighborh2o2d.github.io/敲敲门.html?index='+i;
     }
 
     // artistBtn.onclick = function(){
